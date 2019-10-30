@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
-from browser import Browser
+from features.browser import Browser
 
 class HomePageLocator(object):
     # Home Page Locators
 
     HEADER_TEXT = (By.XPATH, "//h1")
-    SEARCH_FIELD = (By.ID, "term")
-    SUBMIT_BUTTON = (By.ID, "submit")
+    SEARCH_FIELD = (By.ID, "search")
+    SUBMIT_BUTTON = (By.CLASS_NAME, "fa-search")
 
 
 class HomePage(Browser):
