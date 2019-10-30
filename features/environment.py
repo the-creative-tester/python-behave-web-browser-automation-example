@@ -1,7 +1,6 @@
-from selenium import webdriver
-from browser import Browser
-from pages.home_page import HomePage
-from pages.search_results_page import SearchResultsPage
+from features.browser import Browser
+from features.pages.home_page import HomePage
+from features.pages.search_results_page import SearchResultsPage
 
 def before_all(context):
     context.browser = Browser()
